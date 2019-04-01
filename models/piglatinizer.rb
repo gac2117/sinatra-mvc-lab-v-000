@@ -16,7 +16,7 @@ class PigLatinizer
       new_sentence = []
       sentence.each do |word|
         if word[0].match(/[aAeEiIoOuU]/) #if starts with vowel
-          piglatin = words+"way"
+          piglatin = word+"way"
         elsif !word[0].match(/[aAeEiIoOuU]/) && !word[1].match(/[aAeEiIoOuU]/) && !word[2].match(/[aAeEiIoOuU]/) #if starts with 3 consonants
           piglatin = word.slice(3..-1) + word.slice(0,3) + "ay"
         elsif !word[0].match(/[aAeEiIoOuU]/) && !word[1].match(/[aAeEiIoOuU]/) #if starts with 2 consonants
