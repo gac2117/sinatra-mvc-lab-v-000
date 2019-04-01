@@ -5,7 +5,7 @@ class PigLatinizer
       if words[0].match(/[aAeEiIoOuU]/) #if starts with vowel
         piglatin = words+"way"
       elsif !words[0].match(/[aAeEiIoOuU]/)
-        piglatin = word.slice(1..-1) + word.slice(0) + "ay"
+        piglatin = words.slice(1..-1) + words.slice(0) + "ay"
       elsif !words[0].match(/[aAeEiIoOuU]/) && !words[1].match(/[aAeEiIoOuU]/) #if starts with 2 consonants
         piglatin = words.slice(2..-1) + words.slice(0,2) + "ay"
       end
