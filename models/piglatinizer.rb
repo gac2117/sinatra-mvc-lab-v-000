@@ -26,7 +26,7 @@ class PigLatinizer
         end
         new_sentence << piglatin
       end
-      new_sentence.join
+      new_sentence.join(" ")
     end
   end
 end
