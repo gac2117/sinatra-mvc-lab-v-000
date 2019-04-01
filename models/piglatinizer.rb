@@ -6,6 +6,6 @@ class PigLatinizer
       words[0] = ""
       piglatin = words+first_letter+"ay"
       piglatin
-    else
+    end
   end
 end
